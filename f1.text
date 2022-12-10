@@ -1,0 +1,10 @@
+<%= %> used for var references
+<% %> used for control flow
+<!-- <%  if(theDay==="Saturday" || theDay==="Sunday"){ %>
+
+    <h1 style="color :red">It is <%=theDay%>!</h1>
+<% }else{ %>
+    <h1 style="color:green">It is <%=theDay%></h1>
+<%  } %> -->
+
+creating date.js for generating the current date.
