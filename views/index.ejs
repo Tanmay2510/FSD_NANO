@@ -1,0 +1,33 @@
+<%- include("header") -%>
+    <div class="box" id="heading">
+
+
+  <h1 > <%=listTitle%></h1>
+</div>
+<div class="box">
+
+
+    <!-- <li>Buy food</li>
+    <li>Cook food</li>
+    <li>Eat food</li> -->
+
+    <% for(var i =0;i<newlistitem.length ;i++){ %>
+
+      <div class="item">
+        <input type="checkbox" >
+      <p>
+
+        <%=newlistitem[i]%>
+      </p>
+
+    </div>
+    <%}%>
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="new item" autofocus="none">
+    <button type="submit" name="list" value=<%= listTitle %>+</button>
+
+  </form>
+
+</div>
+<%- include("footer") -%>
